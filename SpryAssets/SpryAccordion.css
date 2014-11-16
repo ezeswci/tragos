@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+.Accordion {
+	height: 290px;
+	width: 131px;
+	z-index: 11;
+	left: 10px;
+	top: 38px;
+	position: absolute;
+	font-family: "Gotham Bold";
+	color: #FFF;
+}
+
+ccordion panel container.
+*/
+.AccordionPanel {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.AccordionPanelTab {
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	font-size: 20px;
+	background-image: url(../img/hombre/menu_expand_tab.fw.png);
+	height: 30px;
+	width: 130px;
+	text-align: center;
+	padding-top: 6px;
+}
+
+.AccordionPanelContent {
+	overflow: auto;
+	margin: 0px;
+	height: 90px;
+	padding-right: 0px;
+	font-size: 18px;
+	padding-left: 15px;
+}
+
+
+.AccordionPanelTab.centrum {
+	height: 79px;
+}
+
+
+@media print {
+
+  .Accordion {
+  overflow: visible !important;
+  }
+  
+  .AccordionPanelContent {
+  display: block !important;
+  overflow: visible !important;
+  height: auto !important;
+  }
+}
+
+
+.--------------------------2---------------{}
+.Accordion2 {
+	height: 290px;
+	width: 131px;
+	z-index: 11;
+	left: 10px;
+	top: 38px;
+	position: absolute;
+	font-family: "Gotham Bold";
+	color: #FFF;
+}
+
+.AccordionPanel2 {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.AccordionPanelTab2 {
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	font-size: 20px;
+	background-image: url(../img/mujer/menu_expand_tab.fw.png);
+	height: 30px;
+	width: 130px;
+	text-align: center;
+	padding-top: 6px;
+}
+.AccordionPanelContent2 {
+	overflow: auto;
+	margin: 0px;
+	height: 90px;
+	padding-right: 0px;
+	font-size: 18px;
+	padding-left: 15px;
+}
+
+ */
+.AccordionPanelContent2 {
+	overflow: auto;
+	margin: 0px;
+	height: 90px;
+	padding-right: 0px;
+	font-size: 18px;
+	padding-left: 15px;
+}
+
+
+.AccordionPanelTab2.centrum {
+	height: 79px;
+}
+
+@media print {
+
+  .Accordion2 {
+  overflow: visible !important;
+  }
+  
+  .AccordionPanelContent2 {
+  display: block !important;
+  overflow: visible !important;
+  height: auto !important;
+  }
+}

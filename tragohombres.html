@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="minimum-scale=1.0, maximum-scale=1.0,
+	width=device-width, user-scalable=no">
+<title>Centrum Noticias</title>
+<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+</head>
+<script src="scripts/purl.js" type="text/javascript"></script>
+<script src="scripts/process.js" type="text/javascript"></script>
+<script src="scripts/tragos.js" type="text/javascript"></script>
+
+<body class="cel">
+<div id="cel-menu_expand">
+<a href="#"><img src="img/cel/contenidos/btn3.fw.png" /></a>
+<a href="#"><img src="img/cel/contenidos/btn2.fw.png" /></a>
+<a href="#"><img src="img/cel/contenidos/btn4.1.fw.png" /></a>
+<a href="#"><img src="img/cel/contenidos/btn4.2.fw.png" /></a>
+<a href="#"><img src="img/cel/contenidos/btn4.4.fw.png" /></a>
+<a href="#"><img src="img/cel/contenidos/btn4.5.fw.png" /></a>
+</div>
+
+
+<div class="c_menu">
+  <a href="index.html"><img src="img/cel/atras.jpg" width="35" height="88" /></a><a href="javascript:abrirVentana('1');"><img id="menu" src="img/cel/menu.jpg" width="88" height="88" /><div class="menu_titulo">MEN&Uacute;</div></a>
+  <div id="x" onclick="cerrarVentana()"><img src="img/cel/x.jpg" width="88" height="88" /></div>
+<a href="#"><img class="logo" src="img/cel/logo.jpg" width="100%" /></a></div>
+
+<div id="c_menu_2"></div>
+<div class="trago_abierto" id="tragos_abierto">
+<div class="cel-item">
+<div class="x" onclick="cerrarVentana();">X</div>
+  <div class="titulo2-m" id="trago_nombre">Nombre</div>
+  <div class="imagen_full"><img id="trago_img" src="fotostragos/destornillador.jpg"/></div>
+<div class="texto" id="trago_descipt">Descripcion</div>
+</div>
+</div>
+<div id="cel-fondo_negro" ></div>
+<div class="cel-item">
+  <div class="cel-m-nivel_4">
+    <div class="col1" id="coldiv1"></div>
+    <div class="col1" id="coldiv2"></div>
+    
+     <script>
+	 window.onload=function loadTragos(){
+		 //alert("empiezo");
+	 var par=1;         
+                    for (x = 0; x < lostragos.length; x++) {
+						//alert("entre");
+                            if ((1 === lostragos[x].paraellos)) {
+								//alert("entre: "+lostragos[x].nombre);
+                                    document.getElementById('coldiv'+par).innerHTML += (
+									"<div class='noticia' onclick='abrirTrago("+x+")'> <img src="+ lostragos[x].imagen +" /><div class='texto2'><span class='titulo'>"+ lostragos[x].nombre +"</span><br /><br /><b>Cocteler&iacute;a: </b>"+ lostragos[x].tipo +"</br></br> <b>Descripci&oacute;n: </b>"+lostragos[x].descripcion +"</div></div>");
+									if(par==1){par=2}else{par=1}
+                            }
+                        
+                    }}
+                
+            </script>
+  </div>
+</div>
+</body>
+</html>
