@@ -39,25 +39,31 @@
 <div id="cel-fondo_negro" ></div>
 <div class="cel-item">
   <div class="cel-m-nivel_4">
-  <div class="titulo2">Experto</div>
+  <div class="titulo2">Resultaddos</div>
     <div class="col1" id="coldiv1"></div>
     <div class="col1" id="coldiv2"></div>
     
      <script>
-	 window.onload=function loadTragos(){
-		 //alert("empiezo");
-	 var par=1;         
+		 //alert("empiezo" + loquetenes);
+		 var par=1;                   
+                    console.log(loquetenes);
                     for (x = 0; x < lostragos.length; x++) {
-						//alert("entre");
-                            if (('C' === lostragos[x].dificultad)) {
-								//alert("entre: "+lostragos[x].nombre);
+                        
+                        //var 
+                        for (y = 0, flag=0; y < lostragos[x].alcohol.length && flag!=1; y++) {
+
+                            if (loquetenes[y] < lostragos[x].alcohol[y]) {
+                                flag=1;
+                            }
+						}
+
+                            
+                                if (flag==0) {
                                     document.getElementById('coldiv'+par).innerHTML += (
 									"<div class='noticia' onclick='abrirTrago("+x+")'> <img src="+ lostragos[x].imagen +" /><div class='texto2'><span class='titulo'>"+ lostragos[x].nombre +"</span></div></div>");
 									if(par==1){par=2}else{par=1}
                             }
-                        
-                    }}
-                
+					}            
             </script>
   </div>
 </div>

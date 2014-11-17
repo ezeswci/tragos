@@ -1563,20 +1563,26 @@ body {
 	font-style: italic;
 	color: #2156AB;
 	margin-top: 15px;
+	margin-bottom:15px;
 	text-align: center;
 	padding-left:30px;
 	padding-right:30px;
 }
-.cel .cel-item .titulo2-m {
+.cel .cel-item .titulo2.m {color: #9521AA;}
+.cel .cel-item .titulo2.h {
+	color: #003300;
+}
+.cel .cel-item .titulo2-m{
 	font-family: "Gotham Bold";
 	font-size: 25px;
 	font-style: italic;
-	color: #9521AA;
-	margin-top: 35px;
+	color: #2156AB;
+	margin-top: 15px;
+	margin-bottom:15px;
 	text-align: center;
+	padding-left:30px;
+	padding-right:30px;
 }
-
-
 .cel .cel-item .imagen {
 	height: auto;
 	width: 58%;

@@ -21,11 +21,15 @@ function abrirVentana(ventana)
 
 	function cerrarVentana()
 	{
+		
 		document.getElementById("cel-menu_expand").style.visibility="hidden";
 		document.getElementById("cel-fondo_negro").style.visibility="hidden";
 		document.getElementById("c_menu_2").style.visibility="hidden";
 		document.getElementById("x").style.visibility="hidden"
 		document.getElementById("tragos_abierto").style.visibility="hidden"
+		document.getElementById('trago_nombre').innerHTML=" ";
+		document.getElementById('trago_img').src=" ";
+		document.getElementById('trago_descipt').innerHTML=" ";
 	}
 	function abrirTrago(cual){
 		//alert(cual);
